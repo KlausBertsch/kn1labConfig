@@ -1,5 +1,5 @@
-sudo apt-get update
-sudo apt-get upgrade
+sudo apt-get update -y
+sudo apt-get upgrade -y
 sudo apt-get install -y mininet python3-pip iperf3 python3-tk traceroute iputils-ping python3-psutil python3-netiface
 pip3 install --upgrade pip && \
 pip3 install cpunetlog && \
