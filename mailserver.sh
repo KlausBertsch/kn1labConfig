@@ -1,11 +1,10 @@
-sudo apt-get update -y
+sudo DEBIAN_FRONTEND=noninteractive apt-get update -y 
+sudo DEBIAN_FRONTEND=noninteractive apt-get upgrade -y
 
-sudo apt-get update -y 
-sudo apt-get upgrade -y
-
-sudo apt-get install -y default-jdk
-sudo apt-get install -y maven
-sudo apt-get install -y dovecot-pop3d
+sudo DEBIAN_FRONTEND=noninteractive apt-get install -y default-jdk
+sudo DEBIAN_FRONTEND=noninteractive apt-get install -y maven
+sudo DEBIAN_FRONTEND=noninteractive apt-get install -y dovecot-pop3d
+sudo DEBIAN_FRONTEND=noninteractive apt-get install -y postfix 
 sudo DEBIAN_FRONTEND=noninteractive apt-get install -y postfix 
 sudo echo "export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64" >>~/.bashrc
 sudo echo "export PATH=$JAVA_HOME/bin:$PATH" >>~/.bashrc
