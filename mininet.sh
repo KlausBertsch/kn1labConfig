@@ -1,6 +1,6 @@
-sudo apt-get update -y
-sudo apt-get upgrade -y
-sudo apt-get install -y python3-pip iperf3 python3-tk traceroute iputils-ping python3-psutil
+sudo DEBIAN_FRONTEND=noninteractive apt-get update -y
+sudo DEBIAN_FRONTEND=noninteractive apt-get upgrade -y
+sudo DEBIAN_FRONTEND=noninteractive apt-get install -y python3-pip iperf3 python3-tk traceroute iputils-ping python3-psutil bridge-utils
 pip3 install cpunetlog
 pip3 install matplotlib
 pip3 install ipykernel
