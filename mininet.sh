@@ -39,6 +39,7 @@ fi
 
 # add cpunetlog scripts to PATH
 PATH=\$PATH:\$HOME/cpunetlog
+PATH=\$PATH:\$HOME/CPUnetPLOT
 EOF
 
 
