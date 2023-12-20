@@ -9,6 +9,11 @@ pip3 install mininet
 echo "net.ipv4.tcp_congestion_control = reno" >> /etc/sysctl.conf
 sysctl -p
 
+#!/bin/bash
+rm $HOME/.ssh/id_rsa*
+ssh-keygen -N "" -f $HOME/.ssh/id_rsa
+cat $HOME/.ssh/id_rsa.pub >> $HOME/.ssh/authorized_keys
+
 sudo tee -a ~/.bashrc << EOF
 
 ### custom additions
