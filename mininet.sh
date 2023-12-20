@@ -6,11 +6,6 @@ sudo apt-get update && \
     pip3 install matplotlib && \
     pip3 install ipykernel
 
-sudo service ssh start
-rm $HOME/.ssh/id_rsa*
-ssh-keygen -N "" -f $HOME/.ssh/id_rsa
-cat $HOME/.ssh/id_rsa.pub >> $HOME/.ssh/authorized_keys
-
 echo "net.ipv4.tcp_congestion_control = reno" >> /etc/sysctl.conf
 sysctl -p
 
