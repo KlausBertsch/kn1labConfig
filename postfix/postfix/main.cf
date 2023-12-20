@@ -49,7 +49,7 @@ relay_transport = error
 inet_protocols = all
 debug_peer_list = 127.0.0.1
 
-home_mailbox = Maildir/
+home_mailbox = /home/ubuntu/kn1lab/Maildir/
 
 #Einstellungen für die virtuellen Mailboxen:
 
