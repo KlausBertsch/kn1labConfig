@@ -1,3 +1,11 @@
+sudo apt-get update && \
+    apt-get upgrade -y && \
+    apt-get install -y mininet python3-pip iperf3 python3-tk traceroute bridge-utils iputils-ping python3-psutil python3-netifaces openssh-server && \
+    pip3 install --upgrade pip && \
+    pip3 install cpunetlog && \
+    pip3 install matplotlib && \
+    pip3 install ipykernel
+
 sudo service ssh start
 rm $HOME/.ssh/id_rsa*
 ssh-keygen -N "" -f $HOME/.ssh/id_rsa
