@@ -1,10 +1,10 @@
 sudo apt-get update -y
 sudo apt-get upgrade -y
-sudo apt-get install -y mininet python3-pip iperf3 python3-tk traceroute iputils-ping python3-psutil python3-netiface
-pip3 install --upgrade pip
+sudo apt-get install -y python3-pip iperf3 python3-tk traceroute iputils-ping python3-psutil
 pip3 install cpunetlog
 pip3 install matplotlib
 pip3 install ipykernel
+pip3 install mininet
 
 echo "net.ipv4.tcp_congestion_control = reno" >> /etc/sysctl.conf
 sysctl -p
@@ -50,3 +50,4 @@ sudo tee -a /etc/hosts << EOF
 10.0.0.2 c2
 10.0.0.3 sv1
 EOF
+
