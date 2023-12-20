@@ -1,6 +1,6 @@
 sudo apt-get update && \
     apt-get upgrade -y && \
-    apt-get install -y mininet python3-pip iperf3 python3-tk traceroute bridge-utils iputils-ping python3-psutil python3-netifaces openssh-server && \
+    apt-get install -y mininet python3-pip iperf3 python3-tk traceroute bridge-utils iputils-ping python3-psutil python3-netiface && \
     pip3 install --upgrade pip && \
     pip3 install cpunetlog && \
     pip3 install matplotlib && \
